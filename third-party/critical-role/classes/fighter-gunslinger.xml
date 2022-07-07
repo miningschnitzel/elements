@@ -125,7 +125,7 @@
 		
 		</description>
 		<sheet>
-		<description> When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or be pushed 15 feet away from you.<description>
+		           <description> When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or be pushed 15 feet away from you.</description>
 		</sheet>
 		<rules>
 			<stat name="trick-shot:dc" value="8" />
