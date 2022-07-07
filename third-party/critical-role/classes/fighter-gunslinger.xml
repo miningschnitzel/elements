@@ -20,9 +20,11 @@
 			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH" />
 			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_GRIT" />
 			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_SHOT" />
+			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_DISARMING_SHOT" />
 			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW" />
 			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_VIOLENT_SHOT" />
-			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT" />
+			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_FORCEFUl_SHOT" />
+			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_RAPID_REPAIR" />
 			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD" />
 			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_PIERCING_SHOT" />
 			<div element="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_VICIOUS_INTENT" />
@@ -34,9 +36,11 @@
 			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH" level="3" />
 			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_GRIT" level="3" />
 			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_DEADEYE_SHOT" level="3" />
+			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_DISARMING_SHOT" level="3" />
 			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW" level="7" />
 			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_VIOLENT_SHOT" level="7" />
-			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT" level="10" />
+			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_FORCEFUL_SHOT" level="10" />
+			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_RAPID_REPAIR" level="10" />
 			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD" level="15" />
 			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_PIERCING_SHOT" level="15" />
 			<grant type="Archetype Feature" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_VICIOUS_INTENT" level="18" />
@@ -54,10 +58,10 @@
 	</element>
 	<element name="Gunsmith" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_GUNSMITH">
 		<description>
-			<p>Upon choosing this archetype at 3rd level. you gain proficiency with Tinker’s Tools. You may use them to craft ammunition, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely intricate and experimental firearms are only available through crafting.</p>
+			<p>Upon choosing this archetype at 3rd level. you gain proficiency with Tinker’s Tools. You may use them to craft ammunition, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely intricate and experimental firearms are only available through crafting. You may use them to craft ammunition at half the cost</p>
 		</description>
 		<sheet>
-			<description>Use Tinker’s Tools to craft ammunition, repair damaged firearms, or draft and create new ones.</description>
+			<description>Use Tinker’s Tools to craft ammunition, repair damaged firearms, or draft and create new ones and craft ammo at half the cost</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiciency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
@@ -87,6 +91,14 @@
 			<description>Spend 1 Grit to gain advantage on the next attack with a firearm.</description>
 		</sheet>
 	</element>
+	<element name="Disarming Shot" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_DISARMING_SHOT">
+		<description>
+			<p>When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or drop 1 held object of your choice and have that object be pushed 10 feet away from you.</p>
+		</description>
+		<sheet>
+			<description>Spend 1 Grit to have some one roll a strength save or drop an item 10 ft away from you. </description>
+		</sheet>
+	</element>
 	<element name="Quickdraw" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_QUICKDRAW">
 		<description>
 			<p>When you reach 7th level, you add your proficiency bonus to your initiative. You can also stow a firearm, then draw another firearm as a single object interaction on your turn.</p>
@@ -107,28 +119,29 @@
 			<description>Spend Grit before making an attack roll with a firearm. For each Grit spent, the misfire score goes up +2, but on a hit, you roll one additional weapon die.</description>
 		</sheet>
 	</element>
-	<element name="Trick Shot" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_TRICK_SHOT">
+	<element name="Forceful Shot" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_FORCEFUL_SHOT">
 		<description>
-			<p>By 10th level, you’ve honed your aim to fire off targeted shots to disable an opponent. You can spend 1 grit point before making an attack roll to target a specific location on the target’s body. If the specified body part cannot be seen, or the target lacks the part in question, only normal damage is suffered with no additional effect.</p>
-			<p><center><b>Trick Shot DC = 8</b> + your proficiency bonus + your Dexterity modifier</center></p>
-			<br />
-			<p class="indent"><strong><em>Head.</em></strong> On a hit, the target takes normal damage and must make a Constitution saving throw or suffer disadvantage on attacks until the end of their next turn.</p>
-			<p class="indent"><strong><em>Arms.</em></strong> On a hit, the target takes normal damage and must make a Strength saving throw or drop 1 held item of your choice.</p>
-			<p class="indent"><strong><em>Torso.</em></strong> On a hit, the target takes normal damage and is pushed up to 10 feet directly away from you.</p>
-			<p class="indent"><strong><em>Legs/Wings.</em></strong> On a hit, the target takes normal damage and must make a Strength saving throw or get knocked prone.</p>
+			<p>When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or be pushed 15 feet away from you.</p>
+		
 		</description>
 		<sheet>
-			<description>Spend 1 Grit point to target a specific location on a target’s body.
-			Head: target makes a DC{{trick-shot:dc}} Constitution Saving Throw or has disadvantage on attack until end of its next turn.
-			Arms: target makes a DC{{trick-shot:dc}} Strength saving throw or drop 1 held item of your choice.
-			Torso: target is pushed 10ft away from you.
-			Legs/Wings: target makes a DC{{trick-shot:dc}} Strength saving throw or is knocked prone.</description>
+		<description> When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or be pushed 15 feet away from you.<description>
 		</sheet>
 		<rules>
 			<stat name="trick-shot:dc" value="8" />
 			<stat name="trick-shot:dc" value="proficiency" />
 			<stat name="trick-shot:dc" value="dexterity:modifier" />
 		</rules>
+	</element>
+	<element name="Rapid Repair" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_RAPID_REPAIR">
+		<description>
+			<p>Upon reaching 10th level, you learn how to quickly attempt to fix a jammed gun. You can spend a grit point to attempt to repair a misfired (but not broken) firearm as a bonus action. Tinker's Tools DC8+Misfire Score</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Repair a firearm as a bonus action for a grit point.</description>
+		</sheet>
+	</element>		
+			
 	</element>
 	<element name="Lightning Reload" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD">
 		<description>
@@ -148,7 +161,7 @@
 	</element>
 	<element name="Vicious Intent" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_VICIOUS_INTENT">
 		<description>
-			<p>At 18th level, your firearm attacks score a critical hit on a roll of 19-20.</p>
+			<p>At 18th level, your firearm attacks score a critical hit on a roll of 19-20 and you regain a grit point on a 19 or 20</p>
 		</description>
 		<sheet>
 			<description>Firearm attacks score a critical hit on 19-20.</description>
