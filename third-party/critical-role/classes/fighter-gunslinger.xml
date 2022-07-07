@@ -142,7 +142,6 @@
 		</sheet>
 	</element>		
 			
-	</element>
 	<element name="Lightning Reload" type="Archetype Feature" source="Critical Role" id="ID_CRIT_ARCHETYPE_FEATURE_GUNSLINGER_LIGHTNING_RELOAD">
 		<description>
 			<p>Starting at 15th level, you can reload any firearm as a bonus action.</p>
